@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Planeta Geek Raffle App">
+    <meta name= "robots" content= "index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Aplicación para Sorteos de Planeta Geek</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <img src="./assets/imgs/logo.png" alt="">
+        </div>
+        <h1>APP DE SORTEOS</h1>
+    </header>
+    <main>
+        <section class="table-section">
+            <div class="buttons-container">
+                <p>
+                    <button id="agregar_fila">Agregar Fila</button>
+                </p>
+                <p>
+                    <button id="eliminar_fila">Eliminar Fila</button>
+                </p>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Tabla de Concursantes</th>
+                        </tr>
+                        <tr>
+                            <th class="number-column">N°</th>
+                            <th>Nombre</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cuerpo_tabla">
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="winner-section">
+            <div>
+                <button id="button" onclick="chooseWinNer()">ESCOGER GANADOR</button>
+            </div>
+            <div>
+                <p>¡EL GANADOR ES...!:</p>
+                <p id="winner"></p>
+                <p id="gif-container" class="gif-container">
+                    <img id="gif" src="./assets/imgs/Mario_and_Luigi_high-five_-_Super_Mario_Sticker.webp" alt="">
+                </p>
+            </div>
+        </section>
+        <footer>
+            <section>
+                <div>
+                    <p>Cortesía de:</p>
+                    <p><a href="https://manuelmad.github.io/" target="_blank">Manuel Araujo</a></p>
+                </div>
+            </section>
+        </footer>
+    </main>
+    <script type="text/javascript" src="./src/rowsHandler.js"></script>
+    <script type="text/javascript" src="./src/arrayMaker.js"></script>
+    <script src="./src/index.js"></script>
+</body>
+</html>
