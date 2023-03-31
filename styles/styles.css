@@ -198,6 +198,13 @@ tbody tr td input:hover {
 	color: var(--planeta-geek-blue-shadow);
 }
 
+#button a {
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: var(--black);
+}
+
 #winner {
 	min-height: 25.6rem;
 	padding: 6rem 0 6rem;

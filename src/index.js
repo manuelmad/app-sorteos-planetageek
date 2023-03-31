@@ -18,7 +18,9 @@ function chooseWinNer() {
 		// Limpio el párrafo del ganador y desactivo el botón mientras el sorteo está en marcha
 		document.getElementById('winner').innerText = '';
 		document.getElementById('button').disabled = true;
+		document.getElementById('button').style.backgroundColor = '#e9e8e8';
 		document.getElementById('gif-container').style.display = 'none';
+		window.location.hash = "winner";
 
 		// Hago aparecer nombres al azar en el párrafo del ganador
 		let random = setInterval(() => {
@@ -43,7 +45,9 @@ function chooseWinNer() {
 
 			🥳🎉🥳`;
 			document.getElementById('button').disabled = false;
+			document.getElementById('button').style.backgroundColor = '#03fbfa';
 			document.getElementById('gif-container').style.display = 'block';
+			window.location.hash = "gif-container";
 		}, 5000);
 	}
 }
