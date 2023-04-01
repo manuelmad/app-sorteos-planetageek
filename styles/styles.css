@@ -205,19 +205,39 @@ tbody tr td input:hover {
 	color: var(--black);
 }
 
+#fireworks_container {
+	width: 100%;
+	position: relative;
+}
+
+#fireworks_container img {
+	width: 25.8rem;
+	position: absolute;
+	left: calc(50% - 12.9rem);
+	/* top: -5rem; */
+	display: none;
+}
+
 #winner {
 	min-height: 25.6rem;
 	padding: 6rem 0 6rem;
 	font-size: var(--xlg);
-	color: var(--planeta-geek-green);
+	color: var(--planeta-geek-green-shadow);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .gif-container {
+	width: 30rem;
 	height: 26.8rem;
 	display: none;
+	margin: 0 auto;
 }
 
 #gif {
+	max-width: 30rem;
+	max-height: 26.8rem;
 	margin: 0 auto;
 }
 
